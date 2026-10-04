@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Services | Vinay Kumar</title>
+
+   <!-- Favicon Icon link -->
+   <link rel="shortcut icon" href="images/icons/favicon/service.png" type="image/x-icon">
+
+   <!-- Bootstrap CDN  -->
+   <link rel="stylesheet" href="bootstrap/Bootstrap.css" />
+   <script src="Bootstrap/Bootstrap_js_bundle.js"></script>
+
+   <!--=============== REMIXICONS ===============-->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" />
+
+   <!-- External CSS Link  -->
+   <link rel="stylesheet" href="css/style.css" />
+   <link rel="stylesheet" href="css/nav.css" />
+   <link rel="stylesheet" href="css/responsive.css" />
+
+
+   <style>
+      /* Section */ .services {
+         text-align: center;
+      }
+
+      .services h2 {
+         font-size: 36px;
+         position: relative;
+      }
+
+
+      /* Grid */
+      /* .service-container {
+         display: grid;
+         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+         gap: 25px;
+      } */
+
+      /* Card */
+      .service-card {
+         background: rgba(10, 147, 201, 0.05);
+         border-radius: 15px;
+         padding: 30px 20px;
+         transition: 0.4s;
+         position: relative;
+         overflow: hidden;
+         border: 1px solid rgba(255, 255, 255, 0.1);
+      }
+
+      /* Glow effect */
+      .service-card::before {
+         content: '';
+         position: absolute;
+         width: 0;
+         height: 0;
+         background: var(--primary);
+         top: 0;
+         left: 0;
+         opacity: 0.1;
+         transition: 0.5s;
+         border-radius: 50%;
+      }
+
+      .service-card:hover::before {
+         width: 300%;
+         height: 300%;
+      }
+
+      /* Hover */
+      .service-card:hover {
+         transform: translateY(-10px) scale(1.03);
+         border-color: var(--primary);
+      }
+
+      /* Icon */
+      .service-icon {
+         font-size: 40px;
+         margin-bottom: 20px;
+         color: var(--primary);
+         transition: 0.3s;
+      }
+
+      .service-card:hover .service-icon {
+         transform: rotate(10deg) scale(1.2);
+      }
+
+      /* Title */
+      .service-card h3 {
+         font-size: 20px;
+         margin-bottom: 15px;
+         color: var(--white);
+      }
+
+      /* Text */
+      .service-card p {
+         /* font-size: 14px; */
+         color: var(--grey);
+         line-height: 1.6;
+      }
+
+      /* Responsive */
+      @media(max-width:600px) {
+         .services {
+            padding: 60px 5%;
+         }
+      }
+   </style>
+
+</head>
+
+<body>
+   <span id="cursor"></span>
+   <span class="circle circle1"></span>
+   <span class="circle circle2"></span>
+   <!-- <span id="cursor"></span> -->
+   <header class="header">
+      <div class=" container-lg d-flex justify-content-center">
+         <nav class="nav">
+
+            <a href="index.html" class="nav__logo">
+               <i class="ri-vk-line"></i>
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+               <ul class="nav__list">
+                  <li><a href="index.html" class="nav__link"> Home </a></li>
+                  <li><a href="about.html" class="nav__link"> About </a></li>
+                  <li><a href="service.html" class="nav__link active"> Services </a></li>
+                  <li><a href="projects.html" class="nav__link"> Projects </a></li>
+                  <!-- <li><a href="#" class="nav__link"> Contact </a></li> -->
+               </ul>
+            </div>
+
+            <div class="nav__buttons">
+
+               <a href="contact.html">
+                  <button class="nav__hire">Hire Me</button>
+               </a>
+
+               <button class="nav__toggle" id="nav-toggle">
+                  <i class="ri-menu-line nav__burger"></i>
+                  <i class="ri-close-line nav__close"></i>
+               </button>
+
+            </div>
+         </nav>
+      </div>
+   </header>
+
+   <section class="services">
+      <div class="container">
+         <h2 class="text-center mt-5 z-n1"> My <span>Services </span></h2>
+         <p class="text-center fs-5"> Comprehensive web development solutions tailored to your needs </p>
+
+         <div class="service-container row d-flex">
+
+            <div class="col-md-4 col-sm-6 p-4">
+            <div class="service-card text-center">
+               <div class="service-icon"><i class="display-3 ri-code-s-slash-line"></i></div>
+               <h3>Responsive Design</h3>
+               <p>Mobile-first websites that look perfect on all devices and screen sizes.</p>
+            </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6 p-4">
+            <div class="service-card text-center">
+               <div class="service-icon"><i class="display-3 ri-palette-fill"></i></div>
+               <h3>UI Implementation</h3>
+               <p>Convert Figma or design files <br> into pixel-perfect, interactive <br> UI.</p>
+            </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6 p-4">
+            <div class="service-card text-center">
+               <div class="service-icon"><i class="display-3 ri-file-code-fill"></i></div>
+               <h3>Web Apps</h3>
+               <p>Dynamic frontend applications using modern JavaScript frameworks.</p>
+            </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6 p-4">
+            <div class="service-card text-center">
+               <div class="service-icon"><i class="display-3 ri-settings-4-fill"></i></div>
+               <h3>Performance</h3>
+               <p>Optimize websites for speed, SEO, and smooth user experience.</p>
+            </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6 p-4">
+            <div class="service-card text-center">
+               <div class="service-icon"><i class="display-3 ri-sparkling-fill"></i></div>
+               <h3>Animations</h3>
+               <p>Modern animations and micro-interactions to enhance UX.</p>
+            </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6 p-4">
+            <div class="service-card text-center">
+               <div class="service-icon"><i class="display-3 ri-tools-fill"></i></div>
+               <h3>Maintenance</h3>
+               <p>Fix bugs, update UI, and maintain your website regularly.</p>
+            </div>
+            </div>
+
+         </div>
+      </div>
+   </section>
+
+   <script src="js/script.js"></script>
+</body>
+
+</html>

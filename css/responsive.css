@@ -1,0 +1,19 @@
+@media (max-width:750px) {
+   /* Cursor follow animation  */
+   span#cursor {
+      display: none;
+   }
+   .btn{
+      font-size: 14px;
+   }
+}
+
+
+@media (max-width:500px){
+   section.hero{
+     height: 90vh;
+   }
+   .bg-img{
+     height: 100vh;
+   }
+ }

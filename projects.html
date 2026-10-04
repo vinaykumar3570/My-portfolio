@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Projects | Vinay Kumar</title>
+
+    <!-- Favicon Icon link -->
+    <link rel="shortcut icon" href="images/icons/favicon/work.png" type="image/x-icon">
+
+    <!-- Bootstrap CDN  -->
+    <link rel="stylesheet" href="bootstrap/Bootstrap.css" />
+    <script src="Bootstrap/Bootstrap_js_bundle.js"></script>
+
+    <!--=============== REMIXICONS ===============-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" />
+
+    <!-- External CSS Link  -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/nav.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+
+    <style>
+        /* SECTION TITLE */
+        .section-title {
+            font-size: 34px;
+            font-weight: 600;
+        }
+
+        /* CARD */
+        .project-card {
+            /* position: relative; */
+            border-radius: 20px;
+            overflow: hidden;
+            backdrop-filter: blur(15px);
+            background: rgba(255, 255, 255, 0.05);
+            transition: 0.6s;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .project-container {
+            z-index: -11;
+        }
+
+        /* HOVER EFFECT */
+        .project-card:hover {
+            transform: scale(1.05);
+            /* box-shadow: 0 20px 40px rgba(56, 160, 230, 0.5); */
+            border: 1px solid var(--secondary);
+        }
+
+        /* IMAGE */
+        .project-img {
+            height: 200px;
+            overflow: hidden;
+        }
+
+        .project-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: 0.5s;
+        }
+
+        .project-card:hover img {
+            transform: scale(1.06);
+        }
+
+        /* CONTENT */
+        .project-content {
+            padding: 20px;
+        }
+
+        .tech {
+            font-size: 12px;
+            color: var(--primary);
+            margin-bottom: 10px;
+        }
+
+        .project-title {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: var(--white);
+        }
+
+        .project-desc {
+            font-size: 14px;
+            color: var(--grey);
+            margin-bottom: 15px;
+        }
+
+        .btn-glass {
+            border: 1px solid var(--secondary);
+            color: var(--primary);
+            backdrop-filter: blur(10px);
+            transition: 0.3s;
+        }
+
+        .btn-glass:hover {
+            background: var(--secondary);
+            color: var(--white);
+        }
+    </style>
+
+</head>
+
+<body>
+    <span id="cursor"></span>
+    <span class="circle circle1"></span>
+    <span class="circle circle2"></span>
+    <header class="header">
+        <div class="container-lg d-flex justify-content-center">
+            <nav class="nav">
+
+                <a href="index.html" class="nav__logo">
+                    <i class="ri-vk-line"></i>
+                </a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li><a href="index.html" class="nav__link"> Home </a></li>
+                        <li><a href="about.html" class="nav__link"> About </a></li>
+                        <li><a href="service.html" class="nav__link"> Services </a></li>
+                        <li><a href="projects.html" class="nav__link active"> Projects </a></li>
+                        <!-- <li><a href="#" class="nav__link"> Contact </a></li> -->
+                    </ul>
+                </div>
+
+                <div class="nav__buttons">
+
+                    <a href="contact.html">
+                        <button class="nav__hire">Hire Me</button>
+                    </a>
+
+                    <button class="nav__toggle" id="nav-toggle">
+                        <i class="ri-menu-line nav__burger"></i>
+                        <i class="ri-close-line nav__close"></i>
+                    </button>
+
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+    <section class="container py-5">
+        <h2 class="text-center section-title mb-5">My <span>Projects</span></h2>
+
+        <div class="row g-4 project-container">
+
+            <!-- PROJECT 1 -->
+            <div class="col-sm-6 col-lg-4 px-4 mb-4">
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="images/project1.jpg">
+                    </div>
+
+                    <div class="project-content">
+                        <p class="tech">HTML • CSS • JS</p>
+                        <h5 class="project-title">Portfolio Website</h5>
+                        <p class="project-desc">
+                            Modern responsive portfolio with glass UI and smooth animations.
+                        </p>
+
+                        <div class="d-flex gap-2">
+                            <a href="#" class="btn btn-glass btn-sm rounded-0 px-">GitHub <i class="ri-github-fill"></i> </a>
+                            <a href="#" class="btn btn-glass btn-sm rounded-0 px-">Live</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- PROJECT 2 -->
+            <div class="col-sm-6 col-lg-4 px-4 mb-4">
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="images/project2.jpg">
+                    </div>
+
+                    <div class="project-content">
+                        <p class="tech">React • Bootstrap</p>
+                        <h5 class="project-title">E-Commerce UI</h5>
+                        <p class="project-desc">
+                            Clean shopping UI with modern layout and responsive design.
+                        </p>
+
+                        <div class="d-flex gap-2">
+                            <a href="#" class="btn btn-glass btn-sm rounded-0 px-">GitHub</a>
+                            <a href="#" class="btn btn-glass btn-sm rounded-0 px-">Live</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PROJECT 3 -->
+            <div class="col-sm-6 col-lg-4 px-4 mb-4">
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="images/project3.jpg">
+                    </div>
+
+                    <div class="project-content">
+                        <p class="tech">JavaScript • API</p>
+                        <h5 class="project-title">Weather App</h5>
+                        <p class="project-desc">
+                            Real-time weather app with API integration and smooth UI.
+                        </p>
+
+                        <div class="d-flex gap-2">
+                            <a href="#" class="btn btn-glass btn-sm rounded-0 px-">GitHub</a>
+                            <a href="#" class="btn btn-glass btn-sm rounded-0 px-">Live</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PROJECT 4 -->
+            <div class="col-sm-6 col-lg-4 px-4 mb-4">
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="images/project4.jpg">
+                    </div>
+
+                    <div class="project-content">
+                        <p class="tech">JavaScript • API</p>
+                        <h5 class="project-title">Weather App</h5>
+                        <p class="project-desc">
+                            Real-time weather app with API integration and smooth UI.
+                        </p>
+
+                        <div class="d-flex gap-2">
+                            <a href="#" class="btn btn-glass btn-sm rounded-0 px-">GitHub</a>
+                            <a href="#" class="btn btn-glass btn-sm rounded-0 px-">Live</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PROJECT 5 -->
+            <div class="col-sm-6 col-lg-4 px-4 mb-4">
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="images/project5.jpg">
+                    </div>
+
+                    <div class="project-content">
+                        <p class="tech">JavaScript • API</p>
+                        <h5 class="project-title">Weather App</h5>
+                        <p class="project-desc">
+                            Real-time weather app with API integration and smooth UI.
+                        </p>
+
+                        <div class="d-flex gap-2">
+                            <a href="#" class="btn btn-glass btn-sm rounded-0 px-">GitHub</a>
+                            <a href="#" class="btn btn-glass btn-sm rounded-0 px-">Live</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PROJECT 6 -->
+            <div class="col-sm-6 col-lg-4 px-4 mb-4">
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="images/project6.jpg">
+                    </div>
+
+                    <div class="project-content">
+                        <p class="tech">JavaScript • API</p>
+                        <h5 class="project-title">Weather App</h5>
+                        <p class="project-desc">
+                            Real-time weather app with API integration and smooth UI.
+                        </p>
+
+                        <div class="d-flex gap-2">
+                            <a href="#" class="btn btn-glass btn-sm rounded-0 px-">GitHub</a>
+                            <a href="#" class="btn btn-glass btn-sm rounded-0 px-">Live</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

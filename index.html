@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+  <title>Portfolio | Vinay Kumar</title>
+
+  <!-- Favicon Icon Link  -->
+  <link rel="shortcut icon" href="images/icons/favicon/profile.png" type="image/x-icon">
+
+  <!-- Bootstrap CDN  -->
+  <link rel="stylesheet" href="bootstrap/Bootstrap.css" />
+  <script src="Bootstrap/Bootstrap_js_bundle.js"></script>
+
+  <!--=============== REMIXICONS ===============-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" />
+
+  <!-- External CSS Link  -->
+  <link rel="stylesheet" href="css/preloader.css">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/nav.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+
+
+  <style>
+    .hero h1 {
+      font-size: 40px;
+      font-family: "Orbitron", sans-serif;
+    }
+
+    .hero h1 span {
+      color: var(--primary);
+      font-family: "Orbitron", sans-serif;
+    }
+
+    .hero h2 {
+      text-align: center;
+      font-size: 30px;
+      font-family: "Orbitron", sans-serif;
+    }
+
+    .hero h2 span.typed-text {
+      font-weight: bold;
+      color: #e0e0e0;
+    }
+
+    .hero h2 span.cursor {
+      display: inline-block;
+      background-color: #ccc;
+      margin-left: .2rem;
+      width: 3px;
+      animation: blink 1s infinite;
+    }
+
+    .hero h2 span.cursor.typing {
+      animation: none;
+    }
+
+    @keyframes blink {
+      0% {
+        background-color: #ccc;
+      }
+
+      49% {
+        background-color: #ccc;
+      }
+
+      50% {
+        background-color: transparent;
+      }
+
+      99% {
+        background-color: transparent;
+      }
+
+      100% {
+        background-color: #ccc;
+      }
+    }
+
+    .sunshine {
+      position: fixed;
+      top: -50px;
+      left: 50%;
+      transform: translateX(-50%);
+      opacity: .1;
+      /* z-index: -1 */
+    }
+
+    .btn-primary:active{
+      background: var(--secondary) !important;
+    }
+  </style>
+
+
+
+</head>
+
+<body>
+
+  <div id="preloader">
+    <div class="code">
+      <span class="symbol left">&lt;</span>
+      <span class="symbol slash">/</span>
+      <span class="symbol right">&gt;</span>
+    </div>
+    <div class="text">INITIALIZING PORTFOLIO...</div>
+  </div>
+
+  <div id="content">
+    
+  <!-- <img src="images/pngwing.com (14).png" alt="" class="sunshine"> -->
+  <img src="images/bg1.jpg" alt="" class="bg-img" width="100%">
+  <span id="cursor"></span>
+
+  <span class="circle circle1"></span>
+  <span class="circle circle2"></span>
+
+
+
+  <header class="header">
+    <div class="container-lg d-flex justify-content-center">
+      <nav class="nav">
+
+        <a href="index.html" class="nav__logo">
+          <i class="ri-vk-line"></i>
+        </a>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li><a href="index.html" class="nav__link active"> Home </a></li>
+            <li><a href="about.html" class="nav__link"> About </a></li>
+            <li><a href="service.html" class="nav__link"> Services </a></li>
+            <li><a href="projects.html" class="nav__link"> Projects </a></li>
+            <!-- <li><a href="#" class="nav__link"> Contact </a></li> -->
+          </ul>
+        </div>
+
+        <div class="nav__buttons">
+
+          <a href="contact.html">
+            <button class="nav__hire">Hire Me</button>
+          </a>
+
+          <button class="nav__toggle" id="nav-toggle">
+            <i class="ri-menu-line nav__burger"></i>
+            <i class="ri-close-line nav__close"></i>
+          </button>
+
+        </div>
+      </nav>
+    </div>
+
+    <section class=" hero text-light d-flex flex-column justify-content-center align-items-center">
+
+      <p class="btn btn-outline-primary rounded-5 px-4 mb-0"> >_ Available for New Projets </p>
+
+      <h1 class="mt-5 fw-bold mb-0 text-center"> Hey! My Self <span>Vinay Kumar</span></h1>
+      <h2 class="fs-3 my-3"> I'm a <span class="typed-text" style="color:var(--primary);"></span><span
+          class="cursor">&nbsp;</span>
+      </h2>
+      <!-- <p class="fs-5 fw-medium text-light"> Frontend Developer | UI Designer | Web Developer  </p> -->
+      <p class="fs-5 fw-normal px-4 text-center mb-0"> Building elegant web solutions with modern
+        technologies </p>
+
+      <div class="btn-container text-center my-4">
+        <button class="btn btn-primary rounded-5 m-2 px-4 px-md-5 py-3"> My Work <i class="ri-arrow-right-line"></i>
+        </button>
+        <button class="btn btn-outline-primary rounded-5 m-2 px-4 px-md-5 py-3"> View CV <i
+            class="ri-file-text-line"></i></button>
+      </div>
+
+
+      <div class="links-container ">
+        <i class="btn-outline-primary mx-1 fs-4 btn ri-github-fill"></i>
+        <i class="btn-outline-primary mx-1 fs-4 btn ri-linkedin-fill"></i>
+        <i class="btn-outline-primary mx-1 fs-4 btn ri-mail-line"></i>
+      </div>
+    </section>
+
+
+
+  </header>
+
+
+  </div>
+
+  <script src="js/script.js"></script>
+  <script src="js/preloader.js"></script>
+</body>
+
+</html>

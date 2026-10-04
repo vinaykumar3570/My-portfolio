@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>About | Vinay Kumar</title>
+
+   <!-- Favicon Icon link -->
+   <link rel="shortcut icon" href="images/icons/favicon/info.png" type="image/x-icon">
+
+   <!-- Bootstrap CDN  -->
+   <link rel="stylesheet" href="bootstrap/Bootstrap.css" />
+   <script src="Bootstrap/Bootstrap_js_bundle.js"></script>
+
+   <!--=============== REMIXICONS ===============-->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" />
+
+   <!-- External CSS Link  -->
+   <link rel="stylesheet" href="css/style.css" />
+   <link rel="stylesheet" href="css/nav.css" />
+   <link rel="stylesheet" href="css/responsive.css" />
+
+   <style>
+      h2 {
+         color: var(--white);
+         font-size: 40px;
+         margin-top: 20px;
+      }
+
+      h2 span {
+         color: var(--primary);
+      }
+
+      h3 {
+         color: var(--white);
+         font-size: 30px;
+         margin-top: 20px;
+      }
+
+      h3 span {
+         color: var(--primary);
+      }
+
+      h4 {
+         color: var(--light-grey);
+      }
+
+      .card {
+         /* height: 400px; */
+         width: 300px;
+         /* background: var(--dark-color); */
+         background: transparent;
+         border-radius: 10px;
+         overflow: hidden;
+      }
+
+      .card img {
+         border-radius: 10px;
+         transition: .3s;
+      }
+
+      .card img:hover {
+         transform: scale(1.1);
+      }
+
+      .skill-main {
+         width: 100%;
+      }
+
+      .skill-main .skill-bar .skill-info {
+         display: -webkit-box;
+         display: -ms-flexbox;
+         display: flex;
+         -webkit-box-pack: justify;
+         -ms-flex-pack: justify;
+         justify-content: space-between;
+         -webkit-box-align: center;
+         -ms-flex-align: center;
+         align-items: center;
+         padding: 0 10px;
+         margin-bottom: -10px;
+         font-size: 16px;
+      }
+
+      .skill-bar .skill-info p:nth-child(2) {
+         font-weight: 500;
+      }
+
+      .skill-bar .bar {
+         width: 100%;
+         height: 15px;
+         padding: 3px;
+         border-radius: 25px;
+         margin-top: 5px;
+         position: relative;
+         border: 1px solid var(--primary);
+      }
+
+      .skill-bar .bar span {
+         width: 50%;
+         height: 60%;
+         position: absolute;
+         background-color: var(--primary);
+         border-radius: 25px;
+      }
+
+      .skill-bar .bar .html {
+         width: 95%;
+      }
+
+      .skill-bar .bar .css {
+         width: 85%;
+      }
+
+      .skill-bar .bar .JavaScript {
+         width: 55%;
+      }
+
+      .skill-bar .bar .BootStrap {
+         width: 80%;
+      }
+
+      .skill-bar .bar .jQuery {
+         width: 60%;
+      }
+
+      .skill-bar .bar .photoshop {
+         width: 80%;
+      }
+
+      .skill-bar .bar .illustrator {
+         width: 60%;
+      }
+
+      .skill-bar .bar .figma {
+         width: 75%;
+      }
+
+      .links a:hover {
+         color: var(--primary);
+      }
+      footer{
+         margin-top: 70px;
+      }
+      .footer{
+         background: var(--second-bg);
+      }
+      .footer{
+         z-index: -11;
+         position: relative;
+      }
+      .footer h5{
+         color: #fff;
+      }
+      .footer h6{
+         color: #fff;
+      }
+      .icon-grp{
+         z-index: -11;
+         position: relative;
+      }
+
+   </style>
+</head>
+
+<body>
+
+   <span id="cursor"></span>
+   <span class="circle circle1"></span>
+   <span class="circle circle2"></span>
+
+   <!-- Header Section  -->
+
+   <header class="header">
+      <div class="container-lg d-flex justify-content-center">
+         <nav class="nav">
+            <a href="index.html" class="nav__logo">
+               <i class="ri-vk-line"></i>
+            </a>
+            <div class="nav__menu" id="nav-menu">
+               <ul class="nav__list">
+                  <li><a href="index.html" class="nav__link"> Home </a></li>
+                  <li><a href="about.html" class="nav__link active"> About </a></li>
+                  <li><a href="service.html" class="nav__link"> Services </a></li>
+                  <li><a href="projects.html" class="nav__link"> Projects </a></li>
+                  <!-- <li><a href="#" class="nav__link"> Contact </a></li> -->
+               </ul>
+            </div>
+            <div class="nav__buttons">
+               <a href="contact.html">
+                  <button class="nav__hire">Hire Me</button>
+               </a>
+               <button class="nav__toggle" id="nav-toggle">
+                  <i class="ri-menu-line nav__burger"></i>
+                  <i class="ri-close-line nav__close"></i>
+               </button>
+            </div>
+         </nav>
+      </div>
+   </header>
+
+   <!-- About Section  -->
+
+   <section class="about pb-5">
+      <div class="container">
+         <h2 class="text-center"> About <span> Me </span> </h2>
+         <p class="fs-5 text-center pb-4"> Passionate about creating exceptional digital experiences. </p>
+         <div class="row mb-5">
+            <div class="z-n1 col-md-7 mb-5 mb-md-0 glass-effect p-4">
+               <h3> Hi I'm <span> Vinay Kumar </span></h3>
+               <h4 class="fs-5 "> Frontend Developer | UI/UX Designer | Web Developer </h4>
+               <p class="fs-5"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam dignissimos qui
+                  distinctio libero in perspiciatis? Perferendis voluptatem vero eius, iure quam laudantium eaque fugit
+                  enim laboriosam sint a pariatur vel nisi. Aliquam perspiciatis nihil mollitia velit? Quas voluptatum
+                  ab officiis harum dolores maiores odit! Commodi beatae perferendis consectetur officiis officia.</p>
+            </div>
+            <div class="z-n1 col-md-5 d-flex  justify-content-center align-items-center">
+               <div class="card glass-effect">
+                  <img src="images/profile.jpg" alt="">
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- Section Skills  -->
+
+   <section class="skills">
+      <div class="container">
+         <h2 class="text-center mb-5 pb-4"> Technical <span>Skills</span></h2>
+         <div class="row skill-main mb-5 ms-0 me-0 z-n1">
+            <div class="col-md-6 px-4 pb-3">
+               <div class="skill-bar glass-effect py-3 px-2">
+                  <div class="skill-info">
+                     <p>HTML</p>
+                     <p>95%</p>
+                  </div>
+                  <div class="bar">
+                     <span class="html" data-bar="95%"></span>
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-6 px-4 pb-3">
+               <div class="skill-bar glass-effect py-3 px-2">
+                  <div class="skill-info">
+                     <p>CSS</p>
+                     <p>85%</p>
+                  </div>
+                  <div class="bar">
+                     <span class="css"></span>
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-6 px-4 pb-3">
+               <div class="skill-bar glass-effect py-3 px-2">
+                  <div class="skill-info">
+                     <p>JavaScript</p>
+                     <p>55%</p>
+                  </div>
+                  <div class="bar">
+                     <span class="JavaScript"></span>
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-6 px-4 pb-3">
+               <div class="skill-bar glass-effect py-3 px-2">
+                  <div class="skill-info">
+                     <p>BootStrap</p>
+                     <p>80%</p>
+                  </div>
+                  <div class="bar">
+                     <span class="BootStrap"></span>
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-6 px-4 pb-3">
+               <div class="skill-bar glass-effect py-3 px-2">
+                  <div class="skill-info">
+                     <p>jQuery</p>
+                     <p>60%</p>
+                  </div>
+                  <div class="bar">
+                     <span class="jQuery"></span>
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-6 px-4 pb-3">
+               <div class="skill-bar glass-effect py-3 px-2">
+                  <div class="skill-info">
+                     <p>Photoshop</p>
+                     <p>80%</p>
+                  </div>
+                  <div class="bar">
+                     <span class="photoshop"></span>
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-6 px-4 pb-3">
+               <div class="skill-bar glass-effect py-3 px-2">
+                  <div class="skill-info">
+                     <p>Illustrator</p>
+                     <p>60%</p>
+                  </div>
+                  <div class="bar">
+                     <span class="illustrator"></span>
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-6 px-4 pb-3">
+               <div class="skill-bar glass-effect py-3 px-2">
+                  <div class="skill-info">
+                     <p>Figma</p>
+                     <p>75%</p>
+                  </div>
+                  <div class="bar">
+                     <span class="figma"></span>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="row icon-grp">
+            <div class="col-12 text-center px-md-5 glass-effect mb-4 position-sticky z-n1">
+               <div class="px-md-5 w-md-75">
+               <img style="transform: scale(.5); margin: -10px" src="images/icons/html-5.png" alt="">
+               <img style="transform: scale(.5); margin: -10px" src="images/icons/css-3.png" alt="">
+               <img style="transform: scale(.5); margin: -10px" src="images/icons/js.png" alt="">
+               <img style="transform: scale(.5); margin: -10px" src="images/icons/bootstrap.png" alt="">
+               <img style="transform: scale(.5); margin: -10px" src="images/icons/jquery.png" alt="">
+               <img style="transform: scale(.5); margin: -10px" src="images/icons/photoshop.png" alt="">
+               <img style="transform: scale(.5); margin: -10px" src="images/icons/illustrator.png" alt="">
+               <img style="transform: scale(.5); margin: -10px" src="images/icons/figma.png" alt="">
+               <img style="transform: scale(.5); margin: -10px" src="images/icons/php.png" alt="">
+               <img style="transform: scale(.5); margin: -10px" src="images/icons/sql-server.png" alt="">
+               <img style="transform: scale(.5); margin: -10px" src="images/icons/wordpress.png" alt="">
+            </div>
+               </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- footer Section  -->
+
+   <footer>
+      <div class="footer">
+         <div class="container-lg">
+         <div class="row py-4">
+            <div class="col-sm-4 mb-4">
+               <div class="d-flex align-items-center">
+                  <a href="index.html" class="nav__logo me-3">
+                     <i class="ri-vk-line"></i>
+                  </a>
+                  <h5 class="mb-0"> Vinay Kumar</h5>
+               </div>
+               <p class="mt-3"> Building elegant web solutions with modern technologies </p>
+            </div>
+            <div class="links col-sm-4 mb-4 d-flex flex-column ps-sm-5">
+               <h6> Quick Links </h6>
+               <a href="index.html" class="mt-3 text-secondary">Home</a>
+               <a href="about.html" class="mt-3 text-secondary">About</a>
+               <a href="service.html" class="mt-3 text-secondary">Service</a>
+               <a href="projects.html" class="mt-3 text-secondary">Projects</a>
+            </div>
+            <div class="col-sm-4 mb-4">
+               <h6> Let's Connect </h6>
+               <p class="mt-3 text-secondary"> vinay@gmail.com </p>
+               <p class="mt-3 text-secondary"> Meerut, UP</p>
+               <div class="links-container ">
+                  <i class="btn-outline-secondary mx-1 fs-5 btn ri-github-fill"></i>
+                  <i class="btn-outline-secondary mx-1 fs-5 btn ri-linkedin-fill"></i>
+                  <i class="btn-outline-secondary mx-1 fs-5 btn ri-mail-line"></i>
+               </div>
+            </div>
+         </div>
+      </div>
+      </div>
+
+   </footer>
+   <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact | Vinay Kumar</title>
+    <!-- Favicon Icon link -->
+    <link rel="shortcut icon" href="images/icons/favicon/phone.png" type="image/x-icon">
+    <!-- Bootstrap CDN  -->
+    <link rel="stylesheet" href="bootstrap/Bootstrap.css" />
+    <script src="Bootstrap/Bootstrap_js_bundle.js"></script>
+    <!--=============== REMIXICONS ===============-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" />
+    <!-- External CSS Link  -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/nav.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <style>
+        /* Minimal Glass Effect */
+        .glass {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        /* Small enhancements only */
+        .icon-circle {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--primary);
+        }
+        .info-hover:hover {
+            background: rgba(255, 255, 255, 0.05);
+            transform: translateX(6px);
+            transition: 0.3s;
+        }
+        .btn-gradient {
+            background: var(--primary);
+            border: none;
+        }
+        .btn-gradient:hover {
+            box-shadow: 0 0 10px #00d4ff;
+        }
+        .social a {
+            width: 60px;
+            height: 60px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.05);
+            color: #fff;
+        }
+        .social a:hover {
+            background: var(--primary);
+            transform: translateY(-4px);
+            transition: 0.3s;
+        }
+       .form-control::placeholder{
+            color: var(--dark-grey) !important;
+        }
+        .form-control {
+            border-color:var(--dark-grey) !important;
+            color: var(--light-grey) !important;
+        }
+    </style>
+</head>
+<body>
+    <span id="cursor"></span>
+    <span class="circle circle1"></span>
+    <span class="circle circle2"></span>
+    <header class="header">
+        <div class="container-lg d-flex justify-content-center">
+            <nav class="nav">
+                <a href="index.html" class="nav__logo">
+                    <i class="ri-vk-line"></i>
+                </a>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li><a href="index.html" class="nav__link"> Home </a></li>
+                        <li><a href="about.html" class="nav__link"> About </a></li>
+                        <li><a href="service.html" class="nav__link"> Services </a></li>
+                        <li><a href="projects.html" class="nav__link"> Projects </a></li>
+                        <!-- <li><a href="#" class="nav__link"> Contact </a></li> -->
+                    </ul>
+                </div>
+                <div class="nav__buttons">
+                    <a href="contact.html">
+                        <button class="nav__hire">Hire Me</button>
+                    </a>
+                    <button class="nav__toggle" id="nav-toggle">
+                        <i class="ri-menu-line nav__burger"></i>
+                        <i class="ri-close-line nav__close"></i>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section class="py-5">
+        <div class="container">
+            <!-- Heading -->
+            <div class="text-center mb-5">
+                    <h2 class="text-center"> Contact  <span> Me </span> </h2>
+                    <p class="fs-5 text-center pb-4"> Let's build something amazing 🚀 </p>
+                <!-- <h2 class="fw-bold">Contact Me</h2>
+                <p class="text-light opacity-75"></p> -->
+            </div>
+            <div class="row g-4">
+                <!-- LEFT SIDE -->
+                <div class="col-lg-5 z-n1">
+                    <div class="rounded-4 px-4 pb-4 h-100">
+                        <h4 class="mb-3 text-white">Get in Touch</h4>
+                        <p class="text-light opacity-75">
+                            Feel free to reach out for projects or collaboration.
+                        </p>
+                        <!-- Info Items -->
+                        <div class="d-flex align-items-center gap-3 p-2 rounded-3 mb-3">
+                            <div class="icon-circle">
+                                <i class="ri-mail-line fs-3"></i>
+                            </div>
+                            <div>
+                                <small class="text-light opacity-75">Email</small>
+                                <div style="color:var(--dark-grey)">vinay@email.com</div>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center gap-3 p-2 rounded-3 mb-3">
+                            <div class="icon-circle">
+                                <i class="ri-phone-fill fs-3"></i>
+                            </div>
+                            <div>
+                                <small class="text-light opacity-75">Phone</small>
+                                <div style="color:var(--dark-grey)">+91 9876543210</div>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center gap-3 p-2 rounded-3 mb-3">
+                            <div class="icon-circle">
+                                <i class="ri-map-pin-fill fs-3"></i>
+                            </div>
+                            <div>
+                                <small class="text-light opacity-75">Location</small>
+                                <div style="color:var(--dark-grey)">Meerut, UP, India</div>
+                            </div>
+                        </div>
+                        <!-- Social -->
+                        <div class="d-flex gap-3 mt-4 social align-items-center">
+                            <div class="fw-medium" style="color:var(--dark-grey)">Follow me : </div>
+                            <a href="#"><i class="ri-github-fill fs-5"></i></a>
+                            <a href="#"><i class="ri-linkedin-fill fs-5"></i></a>
+                            <a href="#"><i class="ri-twitter-fill fs-5"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- RIGHT SIDE -->
+                <div class="col-lg-7">
+                    <div class="glass rounded-4 p-4">
+                        <form class="row g-3">
+                            <div class="col-md-6">
+                                <label class="form-label text-light">Name</label>
+                                <input type="text" class="form-control bg-transparent text-white border-secondary"
+                                    placeholder="Your name">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label text-light">Email</label>
+                                <input type="email" class="form-control bg-transparent text-white border-secondary"
+                                    placeholder="Your email">
+                            </div>
+                            <div class="col-12">
+                                <label class="form-label text-light">Subject</label>
+                                <input type="text" class="form-control bg-transparent text-white border-secondary"
+                                    placeholder="Subject">
+                            </div>
+                            <div class="col-12">
+                                <label class="form-label text-light">Message</label>
+                                <textarea class="form-control bg-transparent text-white border-secondary" rows="5"
+                                    placeholder="Message"></textarea>
+                            </div>
+                            <div class="col-12 text-end">
+                                <button class="btn btn-gradient px-4 py-2 rounded-pill text-white">
+                                    Send Message
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="js/script.js"></script>
+</body>
+</html>
