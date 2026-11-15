@@ -8,9 +8,14 @@
   justify-content: space-between;
   align-items: center;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
-  /* position: sticky; */
+  /* position: fixed; */
   /* top: 30px; */
   width: 100%;
+  position: relative;
+   /* top: 20px; */
+   /* left: 0; */
+   /* right: 0; */
+  z-index: 9999;
 }
 
 .nav__logo {
@@ -81,10 +86,10 @@
     top: 1rem;
     left: 0;
     right: 0;
-    /* background: rgba(248, 248, 248, 0.1); */
-    /* background: var(--tertiary); */
-    background:rgb(0, 31, 46);
-    backdrop-filter: blur(10px);
+    /* background: rgba(0, 27, 49, 0.9); */
+    background: var(--tertiary);
+    backdrop-filter: blur(20px);
+    /* -webkit-backdrop-filter: blur(20px); */
     border: 1px solid rgb(110, 110, 110);
     margin-inline: 1rem;
     padding-block: 4rem;
@@ -96,7 +101,7 @@
       transform 0.4s,
       opacity 0.3s;
     /* background: red; */
-    z-index: 111;
+    z-index: 10000;
   }
 
 

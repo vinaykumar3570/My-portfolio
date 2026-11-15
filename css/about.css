@@ -1,0 +1,380 @@
+h2 {
+    color: var(--white);
+    font-size: 40px;
+    margin-top: 20px;
+}
+
+h2 span {
+    color: var(--primary);
+}
+
+h3 {
+    color: var(--white);
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+h3 span {
+    color: var(--primary);
+}
+
+h4 {
+    color: var(--light-grey);
+}
+
+.card {
+    width: 300px;
+    background: transparent;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card img {
+    border-radius: 10px;
+    transition: .3s;
+}
+
+.card img:hover {
+    transform: scale(1.2);
+}
+
+.skill-item {
+    margin-bottom: 15px;
+}
+
+.skill-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.skill-name {
+    font-size: 18px;
+    color: #d6d6d6;
+}
+
+.skill-percent {
+    color: #d6d6d6;
+}
+
+.progress {
+    height: 14px;
+    background: transparent;
+    border: 1px solid var(--primary);
+    border-radius: 30px;
+    padding: 2px;
+}
+
+.progress-bar {
+    width: 0;
+    border-radius: 30px;
+    background: var(--primary);
+    transition: width 1.5s ease;
+}
+
+.links a:hover {
+    color: var(--primary);
+}
+
+.icon-grp {
+    z-index: -11;
+    position: relative;
+}
+
+/* Contact Section  */
+/* Minimal Glass Effect */
+.glass {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all .4s;
+}
+
+.glass-hover:hover {
+    border: 1px solid var(--secondary);
+}
+
+/* Small enhancements only */
+.icon-circle {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--primary);
+}
+
+
+
+.social a {
+    width: 60px;
+    height: 60px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--white);
+}
+
+.social a:hover {
+    background: var(--primary);
+    transform: translateY(-4px);
+    transition: 0.3s;
+}
+
+.popup-content {
+    padding: 20px;
+}
+
+.popup-icon {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: rgba(2, 169, 247, .15);
+    color: #02A9F7;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.popup-content h5 {
+    margin-bottom: 10px;
+}
+
+.popup-content p {
+    margin: 0;
+    color: #cfcfcf;
+    font-size: 14px;
+}
+
+.popup-progress {
+    height: 4px;
+    background: #02A9F7;
+    width: 100%;
+}
+
+.popup-progress.animate {
+    animation: closeBar 3s linear forwards;
+}
+
+@keyframes closeBar {
+    from {
+    width: 100%;
+    }
+
+    to {
+    width: 0%;
+    }
+}
+
+.contact-card {
+    width: 100%;
+    margin: 0 20px;
+    /* background-color: var(--second-bg); */
+    transition: all .5s;
+    box-sizing: border-box;
+}
+
+.contact-card:hover {
+    border: 1px solid var(--secondary);
+    transform: scale(1.02);
+}
+
+
+
+/* Section */
+.expertise {
+    text-align: center;
+    /* z-index: -2; */
+}
+
+.expertise h2 {
+    font-size: 36px;
+    position: relative;
+}
+
+/* Card */
+.service-card {
+    background: rgba(10, 147, 201, 0.05);
+    border-radius: 15px;
+    padding: 30px 20px;
+    transition: 0.4s;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Glow effect */
+.service-card::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    background: var(--primary);
+    top: 0;
+    left: 0;
+    opacity: 0.1;
+    transition: 0.5s;
+    border-radius: 50%;
+}
+
+.service-card:hover::before {
+    width: 300%;
+    height: 300%;
+}
+
+/* Hover */
+.service-card:hover {
+    transform: translateY(-10px) scale(1.03);
+    border-color: var(--primary);
+}
+
+/* Icon */
+.service-icon {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: var(--primary);
+    transition: 0.3s;
+}
+
+.service-card:hover .service-icon {
+    transform: rotate(10deg) scale(1.2);
+}
+
+/* Title */
+.service-card h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: var(--white);
+}
+
+/* Text */
+.service-card p {
+    /* font-size: 14px; */
+    color: var(--grey);
+    line-height: 1.6;
+}
+
+/* Responsive */
+@media(max-width:600px) {
+    .expertise {
+    padding: 60px 5%;
+    }
+}
+
+
+/* From Uiverse.io by SouravBandyopadhyay */
+.service-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.notification {
+    display: flex;
+    flex-direction: column;
+    isolation: isolate;
+    position: relative;
+    width: 18rem;
+    /* height: 8rem; */
+    background: var(--dark-hover-color);
+    border-radius: 1rem;
+    overflow: hidden;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    --gradient: linear-gradient(to bottom, var(--secondary), var(--primary));
+    margin: 10px;
+}
+
+.notification:before {
+    position: absolute;
+    content: "";
+    inset: 0.0625rem;
+    border-radius: 0.9375rem;
+    background: var(--second-bg);
+    z-index: 2;
+}
+
+.notification:after {
+    position: absolute;
+    content: "";
+    width: 0.25rem;
+    inset: 0.65rem auto 0.65rem 0.5rem;
+    border-radius: 0.125rem;
+    background: var(--gradient);
+    transition: transform 300ms ease;
+    z-index: 4;
+}
+
+.notification:hover:after {
+    transform: translateX(0.15rem)
+}
+
+.notititle {
+    /* color: var(--color); */
+    color: var(--light-grey);
+    text-align: left;
+    padding: 0.65rem 0.25rem 0.4rem 1.25rem;
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: transform 300ms ease;
+    z-index: 5;
+}
+
+.notification:hover .notititle {
+    transform: translateX(0.15rem)
+}
+
+.notibody {
+    color: #99999d;
+    text-align: left;
+    padding: 0 1.25rem 1rem;
+    transition: transform 300ms ease;
+    z-index: 5;
+}
+
+.notification:hover .notibody {
+    transform: translateX(0.25rem)
+}
+
+.notiglow,
+.notiborderglow {
+    position: absolute;
+    width: 20rem;
+    height: 20rem;
+    transform: translate(-50%, -50%);
+    background: radial-gradient(circle closest-side at center, var(--white), transparent);
+    opacity: 0;
+    transition: opacity 300ms ease;
+}
+
+.notiglow {
+    z-index: 3;
+}
+
+.notiborderglow {
+    z-index: 1;
+}
+
+.notification:hover .notiglow {
+    opacity: 0.1
+}
+
+.notification:hover .notiborderglow {
+    opacity: 0.1
+}
+
+.note {
+    color: var(--color);
+    position: fixed;
+    top: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-size: 0.9rem;
+    width: 75%;
+}

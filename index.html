@@ -24,8 +24,18 @@
   <link rel="stylesheet" href="css/nav.css" />
   <link rel="stylesheet" href="css/responsive.css" />
 
-
   <style>
+    body {
+      /* background: var(--tertiary); */
+      background-image: url("../images/bg1.jpg");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      overflow-x: hidden;
+      height: 100vh;
+      /* width: 100%; */
+    }
+
     .hero h1 {
       font-size: 40px;
       font-family: "Orbitron", sans-serif;
@@ -87,20 +97,18 @@
       left: 50%;
       transform: translateX(-50%);
       opacity: .1;
-      /* z-index: -1 */
     }
 
-    .btn-primary:active{
+    .btn-primary:active {
       background: var(--secondary) !important;
     }
   </style>
-
-
 
 </head>
 
 <body>
 
+  <!-- Preloader for website -->
   <div id="preloader">
     <div class="code">
       <span class="symbol left">&lt;</span>
@@ -112,79 +120,73 @@
 
   <div id="content">
     
-  <!-- <img src="images/pngwing.com (14).png" alt="" class="sunshine"> -->
-  <img src="images/bg1.jpg" alt="" class="bg-img" width="100%">
-  <span id="cursor"></span>
+    <!-- <img src="images/pngwing.com (14).png" alt="" class="sunshine"> -->
+    <!-- <img src="images/bg1.jpg" alt="" class="bg-img" width="100%"> -->
+    
+    
+    <span id="cursor"></span>
+    <span class="circle circle1"></span>
+    <span class="circle circle2"></span>
 
-  <span class="circle circle1"></span>
-  <span class="circle circle2"></span>
 
 
+    <header class="header">
+      <div class="container-lg d-flex justify-content-center">
+        <nav class="nav">
 
-  <header class="header">
-    <div class="container-lg d-flex justify-content-center">
-      <nav class="nav">
-
-        <a href="index.html" class="nav__logo">
-          <i class="ri-vk-line"></i>
-        </a>
-
-        <div class="nav__menu" id="nav-menu">
-          <ul class="nav__list">
-            <li><a href="index.html" class="nav__link active"> Home </a></li>
-            <li><a href="about.html" class="nav__link"> About </a></li>
-            <li><a href="service.html" class="nav__link"> Services </a></li>
-            <li><a href="projects.html" class="nav__link"> Projects </a></li>
-            <!-- <li><a href="#" class="nav__link"> Contact </a></li> -->
-          </ul>
-        </div>
-
-        <div class="nav__buttons">
-
-          <a href="contact.html">
-            <button class="nav__hire">Hire Me</button>
+          <a href="index.html" class="nav__logo">
+            <i class="ri-vk-line"></i>
           </a>
 
-          <button class="nav__toggle" id="nav-toggle">
-            <i class="ri-menu-line nav__burger"></i>
-            <i class="ri-close-line nav__close"></i>
-          </button>
+          <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+              <li><a href="index.html" class="nav__link active"> Home </a></li>
+              <li><a href="about.html" class="nav__link"> About </a></li>
+              <li><a href="work.html" class="nav__link"> Work </a></li>
+              <li><a href="about.html#contact" class="nav__link"> Contact </a></li>
+            </ul>
+          </div>
 
+          <div class="nav__buttons">
+
+            <a href="images/resume.pdf" target="_blank">
+              <button class="nav__hire">View Resume </button>
+            </a>
+
+            <button class="nav__toggle" id="nav-toggle">
+              <i class="ri-menu-line nav__burger"></i>
+              <i class="ri-close-line nav__close"></i>
+            </button>
+
+          </div>
+        </nav>
+      </div>
+
+      <section class=" hero text-light d-flex flex-column justify-content-center align-items-center">
+
+        <p class="btn btn-outline-primary rounded-5 px-4 mb-0"> >_ Available for New Projects </p>
+
+        <h1 class="mt-5 fw-bold mb-0 text-center"> Hey! My Self <span>Vinay Kumar</span></h1>
+        <h2 class="fs-3 my-3"> I'm a <span class="typed-text" style="color:var(--primary);"></span><span
+            class="cursor">&nbsp;</span>
+        </h2>
+        <!-- <p class="fs-5 fw-medium text-light"> Frontend Developer | UI Designer | Web Developer  </p> -->
+        <p class="fs-5 fw-normal px-4 text-center mb-0"> Building elegant web solutions with modern technologies </p>
+
+        <div class="btn-container text-center my-4">
+          <a href="about.html"><button class="btn btn-primary rounded-5 m-2 px-4 px-md-5 py-3"> About Us <i class="ri-arrow-right-line"></i></button></a>
+          <a href="work.html"><button class="btn btn-outline-primary rounded-5 m-2 px-4 px-md-5 py-3"> View Work </button></a>
         </div>
-      </nav>
-    </div>
 
-    <section class=" hero text-light d-flex flex-column justify-content-center align-items-center">
+        <div class="links-container ">
+          <a href="https://github.com/vinaykumar3570"><i class="btn-outline-primary mx-1 fs-4 btn ri-github-fill"></i></a>
+          <a href="https://linkedin.com/vinaykumar"><i class="btn-outline-primary mx-1 fs-4 btn ri-linkedin-fill"></i></a>
+          <a href="mailto:davidwarner3570@gmail.com"><i class="btn-outline-primary mx-1 fs-4 btn ri-mail-line"></i></a>
+        </div>
+      </section>
 
-      <p class="btn btn-outline-primary rounded-5 px-4 mb-0"> >_ Available for New Projets </p>
-
-      <h1 class="mt-5 fw-bold mb-0 text-center"> Hey! My Self <span>Vinay Kumar</span></h1>
-      <h2 class="fs-3 my-3"> I'm a <span class="typed-text" style="color:var(--primary);"></span><span
-          class="cursor">&nbsp;</span>
-      </h2>
-      <!-- <p class="fs-5 fw-medium text-light"> Frontend Developer | UI Designer | Web Developer  </p> -->
-      <p class="fs-5 fw-normal px-4 text-center mb-0"> Building elegant web solutions with modern
-        technologies </p>
-
-      <div class="btn-container text-center my-4">
-        <button class="btn btn-primary rounded-5 m-2 px-4 px-md-5 py-3"> My Work <i class="ri-arrow-right-line"></i>
-        </button>
-        <button class="btn btn-outline-primary rounded-5 m-2 px-4 px-md-5 py-3"> View CV <i
-            class="ri-file-text-line"></i></button>
-      </div>
-
-
-      <div class="links-container ">
-        <i class="btn-outline-primary mx-1 fs-4 btn ri-github-fill"></i>
-        <i class="btn-outline-primary mx-1 fs-4 btn ri-linkedin-fill"></i>
-        <i class="btn-outline-primary mx-1 fs-4 btn ri-mail-line"></i>
-      </div>
-    </section>
-
-
-
-  </header>
-
+    </header>
+    <div class="bg-shade"></div>
 
   </div>
 

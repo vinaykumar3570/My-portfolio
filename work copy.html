@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Projects | Vinay Kumar</title>
+
+    <!-- Favicon Icon link -->
+    <link rel="shortcut icon" href="images/icons/favicon/work.png" type="image/x-icon">
+
+    <!-- Bootstrap CDN  -->
+    <link rel="stylesheet" href="bootstrap/Bootstrap.css" />
+    <script src="Bootstrap/Bootstrap_js_bundle.js"></script>
+
+    <!--=============== REMIXICONS ===============-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" />
+
+    <!-- External CSS Link  -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/nav.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+
+    <style>
+        /* SECTION TITLE */
+        .section-title {
+            font-size: 34px;
+            font-weight: 600;
+        }
+
+        /* CARD */
+        .project-card {
+            /* position: relative; */
+            border-radius: 20px;
+            overflow: hidden;
+            backdrop-filter: blur(15px);
+            background: rgba(255, 255, 255, 0.05);
+            transition: 0.6s;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        /* HOVER EFFECT */
+        .project-card:hover {
+            transform: scale(1.05);
+            /* box-shadow: 0 20px 40px rgba(56, 160, 230, 0.5); */
+            border: 1px solid var(--secondary);
+        }
+
+        /* IMAGE */
+        .project-img {
+            height: 200px;
+            overflow: hidden;
+        }
+
+        .project-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: 0.5s;
+        }
+
+        .project-card:hover img {
+            transform: scale(1.06);
+        }
+
+        /* CONTENT */
+        .project-content {
+            padding: 20px;
+        }
+
+        .tech {
+            font-size: 12px;
+            color: var(--primary);
+            margin-bottom: 10px;
+        }
+
+        .project-title {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: var(--white);
+        }
+
+        .project-desc {
+            font-size: 14px;
+            color: var(--grey);
+            margin-bottom: 15px;
+        }
+
+        .btn-glass {
+            border: 1px solid var(--secondary);
+            color: var(--primary);
+            backdrop-filter: blur(10px);
+            transition: 0.3s;
+        }
+
+        .btn-glass:hover {
+            background: var(--secondary);
+            color: var(--white);
+        }
+    </style>
+
+</head>
+
+<body>
+    <span id="cursor"></span>
+    <span class="circle circle1"></span>
+    <span class="circle circle2"></span>
+    <header class="header">
+        <div class="container-lg d-flex justify-content-center">
+            <nav class="nav">
+                <a href="index.html" class="nav__logo">
+                    <i class="ri-vk-line"></i>
+                </a>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li><a href="index.html" class="nav__link"> Home </a></li>
+                        <li><a href="about.html" class="nav__link"> About </a></li>
+                        <li><a href="work.html" class="nav__link active"> Work </a></li>
+                        <li><a href="about.html#contact" class="nav__link"> Contact </a></li>
+                    </ul>
+                </div>
+                <div class="nav__buttons">
+                    <a href="images/resume.pdf" target="_blank">
+                        <button class="nav__hire">View Resume </button>
+                    </a>
+                    <button class="nav__toggle" id="nav-toggle">
+                        <i class="ri-menu-line nav__burger"></i>
+                        <i class="ri-close-line nav__close"></i>
+                    </button>
+
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+    <section class="container py-5">
+        <h2 class="text-center section-title mb-5">My <span>Works</span></h2>
+
+        <div class="row g-4 project-container">
+        </div>
+    </section>
+
+
+    <script>
+        let projectCards = [
+            {
+                projectImg: "images/project1.png",
+                tech: "HTML • CSS • JS",
+                projectTitle: "TechNova Website",
+                projectDetail: "Modern responsive website with glass UI and smooth animation",
+                githubLink: "https://github.com/vinaykumar3570/",
+                liveLink: "https://netlify.com/"
+            },
+            {
+                projectImg: "images/project2.png",
+                tech: "Bootstrap",
+                projectTitle: "Education Website",
+                projectDetail: "Clean Education UI with modern layout and responsive design.",
+                githubLink: "https://github.com/vinaykumar3570/",
+                liveLink: "https://netlify.com/"
+            },
+            {
+                projectImg: "images/project3.png",
+                tech: "Bootstrap • Animation",
+                projectTitle: "Travel Website",
+                projectDetail: "CLean Website UI for Travel Anywhere",
+                githubLink: "https://github.com/vinaykumar3570/",
+                liveLink: "https://netlify.com/"
+            },
+            {
+                projectImg: "images/project4.jpg",
+                tech: "JavaScript • Tailwind",
+                projectTitle: "Calculator",
+                projectDetail: "Real-time weather app with API integration and smooth UI.",
+                githubLink: "https://github.com/vinaykumar3570/",
+                liveLink: "https://netlify.com/"
+            },
+            {
+                projectImg: "images/project5.jpg",
+                tech: "Tailwind • Node",
+                projectTitle: "Todo App",
+                projectDetail: "Real-time weather app with API integration and smooth UI.",
+                githubLink: "https://github.com/vinaykumar3570/",
+                liveLink: "https://netlify.com/"
+            },
+            {
+                projectImg: "images/project6.jpg",
+                tech: "React • MongoDB",
+                projectTitle: "Admin Dashboard",
+                projectDetail: "Real-time weather app with API integration and smooth UI.",
+                githubLink: "https://github.com/vinaykumar3570/",
+                liveLink: "https://netlify.com/"
+            }
+        ];
+
+        let projectContainer = document.querySelector(".project-container");
+        let projects = "";
+
+        projectCards.forEach(card => {
+            projects += `<div class="col-sm-6 col-lg-4 px-4 mb-4">
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="${card.projectImg}">
+                    </div>
+                    <div class="project-content">
+                        <p class="tech">${card.tech}</p>
+                        <h5 class="project-title">${card.projectTitle}</h5>
+                        <p class="project-desc">
+                            ${card.projectDetail}
+                        </p>
+                        <div class="d-flex gap-2">
+                            <a href="${card.githubLink}" class="btn btn-glass btn-sm rounded-0 px-">GitHub</a>
+                            <a href="${card.liveLink}" class="btn btn-glass btn-sm rounded-0 px-">Live</a>
+                        </div>
+                    </div>
+                </div>
+            </div>`
+        });
+
+        projectContainer.innerHTML = projects;
+    </script>
+
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

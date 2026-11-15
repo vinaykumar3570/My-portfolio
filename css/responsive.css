@@ -16,4 +16,7 @@
    .bg-img{
      height: 100vh;
    }
+   .circle{
+      display: none;
+   }
  }
