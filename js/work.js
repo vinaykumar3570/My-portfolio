@@ -2,21 +2,21 @@
       {
         id: 1, title: "TechNova Website", category: "frontend", categoryLabel: "Frontend Development",
         description: "A modern, responsive website for a technology brand with a bold hero, clean sections and smooth interactions.",
-        image: "images/projects/project1.png",
+        image: "images/projects/project1.jpg",
         gallery: [], tags: ["HTML", "CSS", "JavaScript", "Bootstrap"],
         live: "https://example.com", github: "https://github.com/", year: "2026"
       },
       {
         id: 2, title: "Education Landing Page", category: "frontend", categoryLabel: "Frontend Development",
         description: "A clean education landing page designed to make courses, learning paths and key calls-to-action easy to explore.",
-        image: "images/projects/project2.png",
+        image: "images/projects/project2.jpg",
         gallery: [], tags: ["HTML", "CSS", "Bootstrap", "Responsive UI"],
         live: "https://example.com", github: "https://github.com/", year: "2026"
       },
       {
         id: 3, title: "Travel Explorer Landing Page", category: "frontend", categoryLabel: "Frontend Development",
         description: "A travel discovery interface with immersive imagery, destination cards and a responsive layout.",
-        image: "images/projects/project3.png",
+        image: "images/projects/project3.jpg",
         gallery: [], tags: ["HTML", "CSS", "JavaScript"],
         live: "https://example.com", github: "https://github.com/", year: "2026"
       },
@@ -46,6 +46,7 @@
         gallery: [
           "images/projects/olay-cream.jpg",
           "images/projects/burger-king.jpg",
+          "images/projects/classic-watch.jpg",
           "images/projects/villain-perfume.jpg",
           "images/projects/digital-marketing.jpg",
           "images/projects/gaming-headphone.jpg",
@@ -78,7 +79,7 @@
         id: 9, title: "Earbuds Packaging", category: "graphic", categoryLabel: "Product & Ad Design",
         description: "A product advertising art direction concept focused on dramatic lighting, a premium mood and clear product storytelling.",
         image: "images/projects/earbuds-packaging-3d.jpg",
-        gallery: ["images/projects/earbuds-packaging.jpg"], 
+        gallery: ["images/projects/earbuds-packaging.jpg"],
         tags: ["Product Ad", "Design", "Photoshop"], year: "2026"
       },
       // {
