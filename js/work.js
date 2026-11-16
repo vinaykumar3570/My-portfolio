@@ -4,14 +4,14 @@
         description: "A modern, responsive website for a technology brand with a bold hero, clean sections and smooth interactions.",
         image: "images/projects/project1.jpg",
         gallery: [], tags: ["HTML", "CSS", "JavaScript", "Bootstrap"],
-        live: "https://example.com", github: "https://github.com/", year: "2026"
+        live: "https://technova-site-work.netlify.app", github: "https://github.com/vinaykumar3570/TechNova-website", year: "2026"
       },
       {
         id: 2, title: "Education Landing Page", category: "frontend", categoryLabel: "Frontend Development",
         description: "A clean education landing page designed to make courses, learning paths and key calls-to-action easy to explore.",
         image: "images/projects/project2.jpg",
         gallery: [], tags: ["HTML", "CSS", "Bootstrap", "Responsive UI"],
-        live: "https://example.com", github: "https://github.com/", year: "2026"
+        live: "https://edustage-site-work.netlify.app", github: "https://github.com/vinaykumar3570/EduStage-Website", year: "2026"
       },
       {
         id: 3, title: "Travel Explorer Landing Page", category: "frontend", categoryLabel: "Frontend Development",
