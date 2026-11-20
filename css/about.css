@@ -174,7 +174,7 @@ h4 {
 
 .contact-card {
     width: 100%;
-    margin: 0 20px;
+    /* margin: 0 20px; */
     /* background-color: var(--second-bg); */
     transition: all .5s;
     box-sizing: border-box;
@@ -184,8 +184,6 @@ h4 {
     border: 1px solid var(--secondary);
     transform: scale(1.02);
 }
-
-
 
 /* Section */
 .expertise {

@@ -52,7 +52,7 @@
           "images/projects/gaming-headphone.jpg",
           "images/projects/nike-shoes.jpg",
           "images/projects/web-design.jpg",
-          "images/projects/olay-cream.jpg",
+          // "images/projects/olay-cream.jpg",
         ], tags: ["Poster", "Social Media", "Photoshop", "Illustrator"], year: "2026"
       },
       {

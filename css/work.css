@@ -22,7 +22,7 @@
       font-weight: 700
     }
 
-    .section-title {
+    /* .section-title {
       font-weight: 800;
       letter-spacing: -.04em;
       font-size: clamp(2rem, 4vw, 3.15rem)
@@ -36,7 +36,7 @@
       color: var(--grey);
       max-width: 620px;
       margin: 0 auto
-    }
+    } */
 
     .filter-bar {
       display: flex;
