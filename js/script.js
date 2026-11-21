@@ -60,3 +60,15 @@ function erase() {
 document.addEventListener("DOMContentLoaded", function () { // On DOM Load initiate the effect
   if (textArray.length) setTimeout(type, newTextDelay + 250);
 });
+
+
+// Navbar close on link click 
+const navMenu = document.getElementById("nav-menu");
+const navToggle = document.getElementById("nav-toggle");
+
+document.querySelectorAll(".nav__link").forEach(link => {
+    link.addEventListener("click", () => {
+        navMenu.classList.remove("show-menu");
+        navToggle.classList.remove("show-icon");
+    });
+});

@@ -184,6 +184,12 @@ h4 {
     border: 1px solid var(--secondary);
     transform: scale(1.02);
 }
+div.fs-5{
+    transition: color .5s;
+}
+.contact-card:hover div.fs-5{
+    color:var(--primary) !important;
+}
 
 /* Section */
 .expertise {
@@ -261,7 +267,7 @@ h4 {
 /* Responsive */
 @media(max-width:600px) {
     .expertise {
-    padding: 60px 5%;
+    padding: 60px 3%;
     }
 }
 
@@ -270,6 +276,7 @@ h4 {
 .service-container {
     display: flex;
     justify-content: space-evenly;
+    gap: 30px;
 }
 
 .notification {
@@ -277,7 +284,7 @@ h4 {
     flex-direction: column;
     isolation: isolate;
     position: relative;
-    width: 18rem;
+    width: 20rem;
     /* height: 8rem; */
     background: var(--dark-hover-color);
     border-radius: 1rem;
@@ -285,7 +292,7 @@ h4 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 16px;
     --gradient: linear-gradient(to bottom, var(--secondary), var(--primary));
-    margin: 10px;
+    /* margin: 10px; */
 }
 
 .notification:before {

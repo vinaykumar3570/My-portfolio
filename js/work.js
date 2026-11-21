@@ -3,7 +3,7 @@
         id: 1, title: "TechNova Website", category: "frontend", categoryLabel: "Frontend Development",
         description: "A modern and responsive technology company website designed to showcase digital services, business solutions, and company information. Features a clean user interface, structured content sections, and an engaging browsing experience across different screen sizes.",
         image: "images/projects/project1.jpg",
-        gallery: [], tags: ["HTML", "CSS", "JavaScript", "Bootstrap"],
+        gallery: [], tags: ["HTML", "CSS", "JavaScript"],
         live: "https://technova-site-work.netlify.app", github: "https://github.com/vinaykumar3570/TechNova-website", year: "2026"
       },
       {
@@ -24,7 +24,7 @@
         id: 4, title: "Gym Website", category: "frontend", categoryLabel: "Frontend Development",
         description: "A modern fitness website developed to showcase gym facilities, workout programs, and fitness services. Features an engaging visual layout, organized content sections, and a responsive design that provides a consistent browsing experience on desktop and mobile devices.",
         image: "images/projects/project4.jpg",
-        gallery: [], tags: ["HTML", "CSS", "JavaScript"],
+        gallery: [], tags: ["HTML", "CSS", "JavaScript", "Bootstrap"],
         live: "https://gym-site-work.netlify.app/", github: "https://github.com/vinaykumar3570/Gym-Website", year: "2026"
       },
       {
@@ -53,7 +53,7 @@
           "images/projects/nike-shoes.jpg",
           "images/projects/web-design.jpg",
           // "images/projects/olay-cream.jpg",
-        ], tags: ["Poster", "Social Media", "Photoshop", "Illustrator"], year: "2026"
+        ], tags: ["Poster", "Social Media", "Photoshop"], year: "2026"
       },
       // {
       //   id: 7, title: "Laddu Packaging", category: "graphic", categoryLabel: "Product & Ad Design",
@@ -69,18 +69,21 @@
         description: "A product packaging and advertising design project focused on creating an attractive visual presentation for a skincare product. Includes packaging concepts, label design, product visualization, and promotional graphics with attention to branding and visual consistency.",
         image: "images/projects/face-wash-3d.jpg",
         gallery: [
-          "images/projects/face-wash-label.jpg",
+          // "images/projects/face-wash-label.jpg",
           "images/projects/face-wash.png",
-          "images/projects/face-wash-packaging.png",
+          "images/projects/face-wash-packaging.jpg",
           "images/projects/face-wash-poster.jpg",
-        ], tags: ["Product Ad", "Design", "Photoshop"], year: "2026"
+        ], tags: ["Product Ad", "Design", "Photoshop", "Illustrator"], year: "2026"
       },
       {
         id: 9, title: "Earbuds Packaging", category: "graphic", categoryLabel: "Product & Ad Design",
         description: "A creative product packaging design concept for wireless earbuds, focusing on modern packaging aesthetics, product presentation, typography, and visual hierarchy. Designed to communicate product features through a clean and appealing visual presentation.",
         image: "images/projects/earbuds-packaging-3d.jpg",
-        gallery: ["images/projects/earbuds-packaging.jpg"],
-        tags: ["Product Ad", "Design", "Photoshop"], year: "2026"
+        gallery: [
+          "images/projects/earbuds-packaging.jpg",
+          "images/projects/earbuds-poster.jpg"
+        ],
+        tags: ["Product Ad", "Design", "Photoshop", "Illustrator"], year: "2026"
       },
       // {
       //   id: 10, title: "Event Promo Edit", category: "video", categoryLabel: "Video Editing",
@@ -104,9 +107,9 @@
       const filtered = projects.filter(p => filter === "all" || p.category === filter);
       grid.innerHTML = filtered.map(p => `
       <div class="col-md-6 col-lg-4 project-item">
-        <article class="project-card" tabindex="0" role="button" aria-label="Preview ${escapeHTML(p.title)}" data-project-id="${p.id}">
+        <article class="project-card glass-effect" tabindex="0" role="button" aria-label="Preview ${escapeHTML(p.title)}" data-project-id="${p.id}">
           <div class="project-image-wrap">
-            <img class="project-image" src="${escapeHTML(p.image)}" alt="${escapeHTML(p.title)} preview" loading="lazy">
+            <img class="project-image" loading="lazy" src="${escapeHTML(p.image)}" alt="${escapeHTML(p.title)} preview" loading="lazy">
             <div class="image-overlay"></div>
             <span class="preview-hint"><i class="bi bi-arrows-angle-expand me-1"></i>Preview work</span>
           </div>

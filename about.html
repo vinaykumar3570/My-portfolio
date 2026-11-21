@@ -12,7 +12,7 @@
 
    <!-- Bootstrap CDN  -->
    <link rel="stylesheet" href="bootstrap/Bootstrap.css" />
-   <script src="Bootstrap/Bootstrap_js_bundle.js"></script>
+   <script src="bootstrap/Bootstrap_js_bundle.js"></script>
 
    <!--=============== REMIXICONS ===============-->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" />
@@ -64,7 +64,7 @@
    <section class="about pb-5 mt-5">
       <div class="container">
          <h2 class="text-center"> About <span> Me </span> </h2>
-         <p class="fs-5 text-center pb-4"> Passionate about creating exceptional digital experiences. </p>
+         <p class="fs-5 text-center pb-2 pb-md-4"> Passionate about creating exceptional digital experiences. </p>
          <div class="row mb-5">
             <div class="z-n1 col-md-7 mb-5 mb-md-0 glass-effect p-4">
                <h3> Hi I'm <span> Vinay Kumar </span></h3>
@@ -115,7 +115,7 @@
    <!-- Expertise Section  -->
    <section class="expertise">
       <div class="container">
-         <h2 class="text-center mt-5"> My <span>Experties </span></h2>
+         <h2 class="text-center mt-5"> My <span>Expertise </span></h2>
          <p class="text-center fs-5"> I combine design and development to build modern, responsive and user-friendly digital experiences. </p>
          <div class="service-container row">
 
@@ -134,26 +134,26 @@
             <div class="notification">
                <div class="notiglow"></div>
                <div class="notiborderglow"></div>
+               <div class="notititle">Responsive Design</div>
+               <div class="notibody">Adapting websites for all screen sizes.</div>
+            </div>
+            <div class="notification">
+               <div class="notiglow"></div>
+               <div class="notiborderglow"></div>
                <div class="notititle">Graphic Design</div>
-               <div class="notibody">Crafting creative visuals and brand identities.</div>
+               <div class="notibody">Creating visual assets and promotional graphics.</div>
             </div>
             <div class="notification">
                <div class="notiglow"></div>
                <div class="notiborderglow"></div>
-               <div class="notititle">Responsive Web Design</div>
-               <div class="notibody">Designing seamless experiences across all devices.</div>
+               <div class="notititle">Website Interactions </div>
+               <div class="notibody">Adding smooth animations and interactions</div>
             </div>
             <div class="notification">
                <div class="notiglow"></div>
                <div class="notiborderglow"></div>
-               <div class="notititle">Website Animation</div>
-               <div class="notibody">Adding smooth and engaging visual interactions.</div>
-            </div>
-            <div class="notification">
-               <div class="notiglow"></div>
-               <div class="notiborderglow"></div>
-               <div class="notititle">Website Development</div>
-               <div class="notibody">Turning designs into functional websites.</div>
+               <div class="notititle"> Landing Page Design </div>
+               <div class="notibody">Designing conversion-focused website pages.</div>
             </div>
 
          </div>
@@ -166,7 +166,7 @@
          <!-- Heading -->
          <div class="text-center mb-5">
             <h2 class="text-center"> Contact <span> Me </span> </h2>
-            <p class="fs-5 text-center pb-4"> Let's build something amazing 🚀 </p>
+            <p class="fs-5 text-center pb-2 pb-md-4"> Let's build something amazing 🚀 </p>
          </div>
          <div class="row g-4">
             <!-- LEFT SIDE -->
@@ -262,8 +262,8 @@
       let dynamicSkill = "";
 
       skills.forEach(skill => {
-         dynamicSkill += `<div class="col-md-6 px-4 ">
-               <div class="skill-item glass-effect p-4" data-progress="95">
+         dynamicSkill += `<div class="col-md-6 px-md-4 px-2">
+               <div class="skill-item glass-effect p-2 p-md-4" data-progress="95">
                   <div class="skill-header">
                      <span class="skill-name">${skill.name}</span>
                      <span class="skill-percent">${skill.progress}%</span>
