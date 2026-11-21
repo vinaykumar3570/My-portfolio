@@ -3,24 +3,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 :root {
-  /* --primary: #38bdf8;
+  --primary: #38bdf8;
   --secondary: #0284c7;
   --tertiary: #07111b;
   --second-bg: #0d1b2a;
   --dark-color: #101a20;
-  --dark-hover-color: #142027; */
+  --dark-hover-color: #142027;
   --dark-grey: #666679;
   --white: #f8fafc;
   --grey: #94a3b8;
   --light-grey: #cbd5e1;
 
-  --primary:#c70c4a;
+  /* --primary:#c70c4a;
   --primary-50: rgba(199, 12, 74, 0.5);
   --secondary:#e62da8;
   --tertiary:#4b0041;
   --second-bg:#1f0011;
   --dark-color:#201019;
-  --dark-hover-color:#271421;
+  --dark-hover-color:#271421; */
 }
 
 ::-webkit-scrollbar {
