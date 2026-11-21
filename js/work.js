@@ -1,14 +1,14 @@
        const projects = [
       {
         id: 1, title: "TechNova Website", category: "frontend", categoryLabel: "Frontend Development",
-        description: "A modern, responsive website for a technology brand with a bold hero, clean sections and smooth interactions.",
+        description: "A modern and responsive technology company website designed to showcase digital services, business solutions, and company information. Features a clean user interface, structured content sections, and an engaging browsing experience across different screen sizes.",
         image: "images/projects/project1.jpg",
         gallery: [], tags: ["HTML", "CSS", "JavaScript", "Bootstrap"],
         live: "https://technova-site-work.netlify.app", github: "https://github.com/vinaykumar3570/TechNova-website", year: "2026"
       },
       {
         id: 2, title: "Education Landing Page", category: "frontend", categoryLabel: "Frontend Development",
-        description: "A clean education landing page designed to make courses, learning paths and key calls-to-action easy to explore.",
+        description: "A responsive educational website landing page designed to present learning opportunities, courses, and educational services. Focuses on clear information hierarchy, intuitive navigation, and user-friendly layouts to help visitors explore educational offerings.",
         image: "images/projects/project2.jpg",
         gallery: [], tags: ["HTML", "CSS", "Bootstrap", "Responsive UI"],
         live: "https://edustage-site-work.netlify.app", github: "https://github.com/vinaykumar3570/EduStage-Website", year: "2026"
@@ -22,26 +22,26 @@
       // },
       {
         id: 4, title: "Gym Website", category: "frontend", categoryLabel: "Frontend Development",
-        description: "A travel discovery interface with immersive imagery, destination cards and a responsive layout.",
+        description: "A modern fitness website developed to showcase gym facilities, workout programs, and fitness services. Features an engaging visual layout, organized content sections, and a responsive design that provides a consistent browsing experience on desktop and mobile devices.",
         image: "images/projects/project4.jpg",
         gallery: [], tags: ["HTML", "CSS", "JavaScript"],
         live: "https://gym-site-work.netlify.app/", github: "https://github.com/vinaykumar3570/Gym-Website", year: "2026"
       },
       {
         id: 5, title: "Magazine Covers", category: "graphic", categoryLabel: "Graphic Design",
-        description: "A minimal visual identity concept for a contemporary fashion and lifestyle label. Explore the logo and supporting brand applications.",
+        description: "A creative collection of magazine cover designs exploring typography, visual composition, image selection, and editorial layouts. Each design focuses on creating an attractive visual hierarchy while maintaining a consistent and professional magazine aesthetic.",
         image: "images/projects/magazine3.jpg",
         gallery: [
           "images/projects/magazine2.jpg",
           "images/projects/magazine4.jpg",
           "images/projects/magazine6.jpg",
           "images/projects/magazine7.jpg",
-          "images/projects/magazine.jpg "
+          "images/projects/magazine.jpg"
         ], tags: ["Photoshop", "Fashion", "Cover Page"], year: "2026"
       },
       {
         id: 6, title: "Social Media Posts", category: "graphic", categoryLabel: "Graphic Design",
-        description: "A collection of campaign graphics and poster explorations built around bold typography, color and strong visual hierarchy.",
+        description: "A collection of promotional social media designs created for different products and brands. The designs focus on eye-catching visuals, creative typography, product presentation, and effective color combinations to create engaging digital marketing content.",
         image: "images/projects/airpods.jpg",
         gallery: [
           "images/projects/olay-cream.jpg",
@@ -66,7 +66,7 @@
       // },
       {
         id: 8, title: "Face Wash Packaging", category: "graphic", categoryLabel: "Product & Ad Design",
-        description: "A product advertising art direction concept focused on dramatic lighting, a premium mood and clear product storytelling.",
+        description: "A product packaging and advertising design project focused on creating an attractive visual presentation for a skincare product. Includes packaging concepts, label design, product visualization, and promotional graphics with attention to branding and visual consistency.",
         image: "images/projects/face-wash-3d.jpg",
         gallery: [
           "images/projects/face-wash-label.jpg",
@@ -77,7 +77,7 @@
       },
       {
         id: 9, title: "Earbuds Packaging", category: "graphic", categoryLabel: "Product & Ad Design",
-        description: "A product advertising art direction concept focused on dramatic lighting, a premium mood and clear product storytelling.",
+        description: "A creative product packaging design concept for wireless earbuds, focusing on modern packaging aesthetics, product presentation, typography, and visual hierarchy. Designed to communicate product features through a clean and appealing visual presentation.",
         image: "images/projects/earbuds-packaging-3d.jpg",
         gallery: ["images/projects/earbuds-packaging.jpg"],
         tags: ["Product Ad", "Design", "Photoshop"], year: "2026"
