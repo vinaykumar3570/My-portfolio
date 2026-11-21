@@ -13,19 +13,19 @@
         gallery: [], tags: ["HTML", "CSS", "Bootstrap", "Responsive UI"],
         live: "https://edustage-site-work.netlify.app", github: "https://github.com/vinaykumar3570/EduStage-Website", year: "2026"
       },
-      {
-        id: 3, title: "Travel Explorer Landing Page", category: "frontend", categoryLabel: "Frontend Development",
-        description: "A travel discovery interface with immersive imagery, destination cards and a responsive layout.",
-        image: "images/projects/project3.jpg",
-        gallery: [], tags: ["HTML", "CSS", "JavaScript"],
-        live: "https://example.com", github: "https://github.com/", year: "2026"
-      },
+      // {
+      //   id: 3, title: "Travel Explorer Landing Page", category: "frontend", categoryLabel: "Frontend Development",
+      //   description: "A travel discovery interface with immersive imagery, destination cards and a responsive layout.",
+      //   image: "images/projects/project3.jpg",
+      //   gallery: [], tags: ["HTML", "CSS", "JavaScript"],
+      //   live: "https://example.com", github: "https://github.com/", year: "2026"
+      // },
       {
         id: 4, title: "Gym Website", category: "frontend", categoryLabel: "Frontend Development",
         description: "A travel discovery interface with immersive imagery, destination cards and a responsive layout.",
         image: "images/projects/project4.jpg",
         gallery: [], tags: ["HTML", "CSS", "JavaScript"],
-        live: "https://example.com", github: "https://github.com/", year: "2026"
+        live: "https://gym-site-work.netlify.app/", github: "https://github.com/vinaykumar3570/Gym-Website", year: "2026"
       },
       {
         id: 5, title: "Magazine Covers", category: "graphic", categoryLabel: "Graphic Design",
@@ -55,15 +55,15 @@
           // "images/projects/olay-cream.jpg",
         ], tags: ["Poster", "Social Media", "Photoshop", "Illustrator"], year: "2026"
       },
-      {
-        id: 7, title: "Laddu Packaging", category: "graphic", categoryLabel: "Product & Ad Design",
-        description: "A product advertising art direction concept focused on dramatic lighting, a premium mood and clear product storytelling.",
-        image: "images/projects/laddu-pack-3d.jpg",
-        gallery: [
-          "images/projects/laddu-packaging.jpg",
-          "images/projects/laddu.jpg"
-        ], tags: ["Product Ad", "Photoshop", "Art Direction"], year: "2026"
-      },
+      // {
+      //   id: 7, title: "Laddu Packaging", category: "graphic", categoryLabel: "Product & Ad Design",
+      //   description: "A product advertising art direction concept focused on dramatic lighting, a premium mood and clear product storytelling.",
+      //   image: "images/projects/laddu-pack-3d.jpg",
+      //   gallery: [
+      //     "images/projects/laddu-packaging.jpg",
+      //     "images/projects/laddu.jpg"
+      //   ], tags: ["Product Ad", "Photoshop", "Art Direction"], year: "2026"
+      // },
       {
         id: 8, title: "Face Wash Packaging", category: "graphic", categoryLabel: "Product & Ad Design",
         description: "A product advertising art direction concept focused on dramatic lighting, a premium mood and clear product storytelling.",
